@@ -1,2 +1,2 @@
-# my-blog-admin
+# my-blog
 Blog admin platform
