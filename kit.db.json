@@ -1,0 +1,24 @@
+[
+	{
+		"id":"GM233DFQGO8OC",
+		"name":"myblog",
+		"type":"mysql",
+		"host":"myblog",
+		"port":"3306",
+		"schema":"myblog",
+		"username":"admin",
+		"password":"admin",
+		"models":[]
+	},
+	{
+		"id":"5S422U1YX94WOS",
+		"name":"myblog",
+		"type":"mysql",
+		"host":"myblog",
+		"port":"3306",
+		"schema":"myblog",
+		"username":"admin",
+		"password":"admin",
+		"models":[]
+	}
+]

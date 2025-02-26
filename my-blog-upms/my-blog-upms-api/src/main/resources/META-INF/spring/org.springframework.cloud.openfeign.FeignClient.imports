@@ -1,0 +1,6 @@
+com.geekslife.admin.api.feign.RemoteClientDetailsService
+com.geekslife.admin.api.feign.RemoteDictService
+com.geekslife.admin.api.feign.RemoteLogService
+com.geekslife.admin.api.feign.RemoteParamService
+com.geekslife.admin.api.feign.RemoteTokenService
+com.geekslife.admin.api.feign.RemoteUserService

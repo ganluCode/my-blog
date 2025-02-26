@@ -1,0 +1,106 @@
+version: '3'
+services:
+  my-blog-mysql:
+    build:
+      context: ./db
+    environment:
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+    container_name: my-blog-mysql
+    image: my-blog-mysql
+    ports:
+      - 3306:3306
+    networks:
+      - spring_cloud_default
+
+  my-blog-redis:
+    image: redis:7.2.4
+    ports:
+      - 6379:6379
+    restart: always
+    container_name: my-blog-redis
+    hostname: my-blog-redis
+    networks:
+      - spring_cloud_default
+
+  my-blog-register:
+    build:
+      context: ./my-blog-register
+    restart: always
+    ports:
+      - 8848:8848
+      - 9848:9848
+    container_name: my-blog-register
+    hostname: my-blog-register
+    image: my-blog-register
+    networks:
+      - spring_cloud_default
+
+  my-blog-gateway:
+    build:
+      context: ./my-blog-gateway
+    restart: always
+    ports:
+      - 9999:9999
+    container_name: my-blog-gateway
+    hostname: my-blog-gateway
+    image: my-blog-gateway
+    networks:
+      - spring_cloud_default
+
+  my-blog-auth:
+    build:
+      context: ./my-blog-auth
+    restart: always
+    container_name: my-blog-auth
+    hostname: my-blog-auth
+    image: my-blog-auth
+    networks:
+      - spring_cloud_default
+
+  my-blog-upms:
+    build:
+      context: ./my-blog-upms/my-blog-upms-biz
+    restart: always
+    container_name: my-blog-upms
+    hostname: my-blog-upms
+    image: my-blog-upms
+    networks:
+      - spring_cloud_default
+
+  my-blog-monitor:
+    build:
+      context: ./my-blog-visual/my-blog-monitor
+    restart: always
+    ports:
+      - 5001:5001
+    container_name: my-blog-monitor
+    hostname: my-blog-monitor
+    image: my-blog-monitor
+    networks:
+      - spring_cloud_default
+
+  my-blog-codegen:
+    build:
+      context: ./my-blog-visual/my-blog-codegen
+    restart: always
+    container_name: my-blog-codegen
+    hostname: my-blog-codegen
+    image: my-blog-codegen
+    networks:
+      - spring_cloud_default
+
+  my-blog-quartz:
+    build:
+      context: ./my-blog-visual/my-blog-quartz
+    restart: always
+    image: my-blog-quartz
+    container_name: my-blog-quartz
+    networks:
+      - spring_cloud_default
+
+networks:
+  spring_cloud_default:
+    name:  spring_cloud_default
+    driver: bridge

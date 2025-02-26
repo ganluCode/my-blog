@@ -1,0 +1,7 @@
+com.geekslife.common.security.service.My-BlogUserDetailsServiceImpl
+com.geekslife.common.security.service.My-BlogAppUserDetailsServiceImpl
+com.geekslife.common.security.service.My-BlogRedisOAuth2AuthorizationService
+com.geekslife.common.security.service.My-BlogRedisOAuth2AuthorizationConsentService
+com.geekslife.common.security.component.My-BlogSecurityInnerAspect
+com.geekslife.common.security.component.My-BlogSecurityMessageSourceConfiguration
+com.geekslife.common.security.service.My-BlogRemoteRegisteredClientRepository

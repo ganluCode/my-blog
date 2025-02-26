@@ -1,0 +1,6 @@
+com.geekslife.common.core.config.TaskExecutorConfiguration
+com.geekslife.common.core.config.JacksonConfiguration
+com.geekslife.common.core.config.RedisTemplateConfiguration
+com.geekslife.common.core.config.RestTemplateConfiguration
+com.geekslife.common.core.util.SpringContextHolder
+com.geekslife.common.core.config.WebMvcConfiguration
