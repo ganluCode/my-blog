@@ -1,6 +1,6 @@
 [
 	{
-		"id":"GM233DFQGO8OC",
+		"id":"JO96L3YF83S4S",
 		"name":"myblog",
 		"type":"mysql",
 		"host":"myblog",
@@ -11,7 +11,7 @@
 		"models":[]
 	},
 	{
-		"id":"5S422U1YX94WOS",
+		"id":"3UMY7TTDFTK4WC",
 		"name":"myblog",
 		"type":"mysql",
 		"host":"myblog",

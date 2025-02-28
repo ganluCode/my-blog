@@ -1,0 +1,3 @@
+com.geekslife.common.feign.MyBlogFeignAutoConfiguration
+com.geekslife.common.feign.sentinel.SentinelAutoConfiguration
+com.geekslife.common.feign.sentinel.handle.GlobalBizExceptionHandler

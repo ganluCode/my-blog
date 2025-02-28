@@ -56,29 +56,29 @@
 pig-ui  -- https://gitee.com/log4j/pig-ui
 
 pig
-├── my-blog-boot -- 单体模式启动器[9999]
-├── my-blog-auth -- 授权服务提供[3000]
-└── my-blog-common -- 系统公共模块
-     ├── my-blog-common-bom -- 全局依赖管理控制
-     ├── my-blog-common-core -- 公共工具类核心包
-     ├── my-blog-common-datasource -- 动态数据源包
-     ├── my-blog-common-log -- 日志服务
-     ├── my-blog-common-oss -- 文件上传工具类
-     ├── my-blog-common-mybatis -- mybatis 扩展封装
-     ├── my-blog-common-seata -- 分布式事务
-     ├── my-blog-common-security -- 安全工具类
-     ├── my-blog-common-swagger -- 接口文档
-     ├── my-blog-common-feign -- feign 扩展封装
-     └── my-blog-common-xss -- xss 安全封装
-├── my-blog-register -- Nacos Server[8848]
-├── my-blog-gateway -- Spring Cloud Gateway网关[9999]
-└── my-blog-upms -- 通用用户权限管理模块
-     └── my-blog-upms-api -- 通用用户权限管理系统公共api模块
-     └── my-blog-upms-biz -- 通用用户权限管理系统业务处理模块[4000]
-└── my-blog-visual
-     └── my-blog-monitor -- 服务监控 [5001]
-     ├── my-blog-codegen -- 图形化代码生成 [5002]
-     └── my-blog-quartz -- 定时任务管理台 [5007]
+├── myblog-boot -- 单体模式启动器[9999]
+├── myblog-auth -- 授权服务提供[3000]
+└── myblog-common -- 系统公共模块
+     ├── myblog-common-bom -- 全局依赖管理控制
+     ├── myblog-common-core -- 公共工具类核心包
+     ├── myblog-common-datasource -- 动态数据源包
+     ├── myblog-common-log -- 日志服务
+     ├── myblog-common-oss -- 文件上传工具类
+     ├── myblog-common-mybatis -- mybatis 扩展封装
+     ├── myblog-common-seata -- 分布式事务
+     ├── myblog-common-security -- 安全工具类
+     ├── myblog-common-swagger -- 接口文档
+     ├── myblog-common-feign -- feign 扩展封装
+     └── myblog-common-xss -- xss 安全封装
+├── myblog-register -- Nacos Server[8848]
+├── myblog-gateway -- Spring Cloud Gateway网关[9999]
+└── myblog-upms -- 通用用户权限管理模块
+     └── myblog-upms-api -- 通用用户权限管理系统公共api模块
+     └── myblog-upms-biz -- 通用用户权限管理系统业务处理模块[4000]
+└── myblog-visual
+     └── myblog-monitor -- 服务监控 [5001]
+     ├── myblog-codegen -- 图形化代码生成 [5002]
+     └── myblog-quartz -- 定时任务管理台 [5007]
 ```
 
 ### 本地开发 运行

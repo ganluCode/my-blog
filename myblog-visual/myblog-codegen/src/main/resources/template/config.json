@@ -1,0 +1,12 @@
+{
+  "project": {
+    "packageName": "com.geekslife",
+    "version": "1.0.0",
+    "backendPath": "myblog",
+    "frontendPath": "myblog-ui"
+  },
+  "developer": {
+    "author": "myblog",
+    "email": ""
+  }
+}

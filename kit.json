@@ -8,7 +8,7 @@
 				{
 					"name":"projectName",
 					"inputType":"input",
-					"value":"My-Blog"
+					"value":"MyBlog"
 				},
 				{
 					"name":"basePackage",
@@ -18,12 +18,12 @@
 				{
 					"name":"database",
 					"inputType":"datasource",
-					"value":"GM233DFQGO8OC"
+					"value":"JO96L3YF83S4S"
 				},
 				{
 					"name":"configDatabase",
 					"inputType":"datasource",
-					"value":"5S422U1YX94WOS"
+					"value":"3UMY7TTDFTK4WC"
 				},
 				{
 					"name":"redisPassword",

@@ -1,102 +1,102 @@
 version: '3'
 services:
-  my-blog-mysql:
+  myblog-mysql:
     build:
       context: ./db
     environment:
       MYSQL_ROOT_HOST: "%"
       MYSQL_ROOT_PASSWORD: root
     restart: always
-    container_name: my-blog-mysql
-    image: my-blog-mysql
+    container_name: myblog-mysql
+    image: myblog-mysql
     ports:
       - 3306:3306
     networks:
       - spring_cloud_default
 
-  my-blog-redis:
+  myblog-redis:
     image: redis:7.2.4
     ports:
       - 6379:6379
     restart: always
-    container_name: my-blog-redis
-    hostname: my-blog-redis
+    container_name: myblog-redis
+    hostname: myblog-redis
     networks:
       - spring_cloud_default
 
-  my-blog-register:
+  myblog-register:
     build:
-      context: ./my-blog-register
+      context: ./myblog-register
     restart: always
     ports:
       - 8848:8848
       - 9848:9848
-    container_name: my-blog-register
-    hostname: my-blog-register
-    image: my-blog-register
+    container_name: myblog-register
+    hostname: myblog-register
+    image: myblog-register
     networks:
       - spring_cloud_default
 
-  my-blog-gateway:
+  myblog-gateway:
     build:
-      context: ./my-blog-gateway
+      context: ./myblog-gateway
     restart: always
     ports:
       - 9999:9999
-    container_name: my-blog-gateway
-    hostname: my-blog-gateway
-    image: my-blog-gateway
+    container_name: myblog-gateway
+    hostname: myblog-gateway
+    image: myblog-gateway
     networks:
       - spring_cloud_default
 
-  my-blog-auth:
+  myblog-auth:
     build:
-      context: ./my-blog-auth
+      context: ./myblog-auth
     restart: always
-    container_name: my-blog-auth
-    hostname: my-blog-auth
-    image: my-blog-auth
+    container_name: myblog-auth
+    hostname: myblog-auth
+    image: myblog-auth
     networks:
       - spring_cloud_default
 
-  my-blog-upms:
+  myblog-upms:
     build:
-      context: ./my-blog-upms/my-blog-upms-biz
+      context: ./myblog-upms/myblog-upms-biz
     restart: always
-    container_name: my-blog-upms
-    hostname: my-blog-upms
-    image: my-blog-upms
+    container_name: myblog-upms
+    hostname: myblog-upms
+    image: myblog-upms
     networks:
       - spring_cloud_default
 
-  my-blog-monitor:
+  myblog-monitor:
     build:
-      context: ./my-blog-visual/my-blog-monitor
+      context: ./myblog-visual/myblog-monitor
     restart: always
     ports:
       - 5001:5001
-    container_name: my-blog-monitor
-    hostname: my-blog-monitor
-    image: my-blog-monitor
+    container_name: myblog-monitor
+    hostname: myblog-monitor
+    image: myblog-monitor
     networks:
       - spring_cloud_default
 
-  my-blog-codegen:
+  myblog-codegen:
     build:
-      context: ./my-blog-visual/my-blog-codegen
+      context: ./myblog-visual/myblog-codegen
     restart: always
-    container_name: my-blog-codegen
-    hostname: my-blog-codegen
-    image: my-blog-codegen
+    container_name: myblog-codegen
+    hostname: myblog-codegen
+    image: myblog-codegen
     networks:
       - spring_cloud_default
 
-  my-blog-quartz:
+  myblog-quartz:
     build:
-      context: ./my-blog-visual/my-blog-quartz
+      context: ./myblog-visual/myblog-quartz
     restart: always
-    image: my-blog-quartz
-    container_name: my-blog-quartz
+    image: myblog-quartz
+    container_name: myblog-quartz
     networks:
       - spring_cloud_default
 

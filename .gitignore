@@ -1,7 +1,56 @@
 # Compiled class file
 *.class
 
+### gradle ###
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.settings/
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+bin/
+
+### IntelliJ IDEA ###
 .idea
+*.iws
+*.iml
+*.ipr
+rebel.xml
+
+### maven ###
+target/
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
+*.versionsBackup
+
+### temp ignore ###
+*.cache
+*.diff
+*.patch
+*.tmp
+*.java~
+*.properties~
+*.xml~
+
+### system ignore ###
+.DS_Store
+Thumbs.db
+Servers
+.metadata
+.flattened-pom.xml
+
+### KIT ###
+.kit/translated
+
 
 # Log file
 *.log
@@ -27,4 +76,4 @@ replay_pid*
 
 
 
-./**/application-local.yml
+***/application-local.yml
